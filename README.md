@@ -1,7 +1,7 @@
 # Spatial_Classifier-DL
 Deep learning based spatial stationary and nonstationary classifier.
 
-**Pre-requisites**
+## Pre-requisites
 
 Please ensure that you have R installed on your system, along with the following libraries:
 ```
@@ -11,7 +11,7 @@ fields
 ```
 Additionally, please verify if Python 3+ is installed. If not please download and install python from [here]([https://www.jstatsoft.org/article/view/v098i04](https://www.python.org/downloads/)) 
 
-**Install python virtual env to run the code**
+## Install python virtual env to run the code
 
 Check if `pip` is installed
 
@@ -41,6 +41,12 @@ Install all dependencies for your project from `requirements.txt` file:
 $ pip install -r requirements.txt
 ```
 
-**Reproducing results**
+## Reproducing results
+
+Results can be reproduced by running the following command:
+```
+bash run.sh
+```
+The accuracy on the test sets will be displayed in the command prompt.
 
 
