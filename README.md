@@ -2,6 +2,7 @@
 Deep learning based spatial stationary and nonstationary classifier.
 
 **Pre-requisites**
+
 Please ensure that you have R installed on your system, along with the following libraries:
 ```
 geoR
