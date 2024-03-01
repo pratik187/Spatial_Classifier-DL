@@ -9,7 +9,7 @@ geoR
 MASS
 fields
 ```
-Additionally, please verify if Python 3+ is installed. If not please download and install python from [here]([https://www.jstatsoft.org/article/view/v098i04](https://www.python.org/downloads/)) 
+Additionally, please verify if Python 3+ is installed. If not please download and install python from [here](https://www.python.org/downloads/)
 
 ## Install python virtual env to run the code
 
