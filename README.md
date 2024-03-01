@@ -28,8 +28,8 @@ $ python3 get-pip.py
 Install virtual environment first & then activate:
 
 ```
-$ git clone git@github.com:pratik187/Spatial_NormalizingFlows.git
-$ cd Spatial_NormalizingFlows
+$ git clone git@github.com:pratik187/Spatial_Classifier-DL.git
+$ cd Spatial_Classifier-DL
 $ python3 -m pip install --user virtualenv #Install virtualenv if not installed in your system
 $ python3 -m virtualenv env #Create virtualenv for your project
 $ source env/bin/activate #Activate virtualenv for linux/MacOS
