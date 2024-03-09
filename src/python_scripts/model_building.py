@@ -133,7 +133,7 @@ def main():
     
     y_train = to_categorical(y_train)
     y_test = to_categorical(y_test)
-    
+    tf.random.set_seed(15) 
     print("[*][*][*] Training Started [*][*][*]")
     classifier = Classifier(x_train,x_test,y_train,y_test,model_saving_location)
     print("[*][*][*] Training Finished [*][*][*]")

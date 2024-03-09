@@ -17,6 +17,7 @@ from tqdm import tqdm # Progress bar in for loop
 import subprocess
 # Tensorflow
 import tensorflow as tf
+import pandas as pd
 
 # from tensorflow.keras.layers import Dense, Flatten, Conv2D
 # from tensorflow.keras import Model
@@ -298,7 +299,8 @@ def main():
     model = load_model("Model_Example/classifier.h5")
     prediction = model.predict(stationary_x_test)
     count = 0
-
+    df = pd.DataFrame(np.vstack((prediction[:,0],prediction[:,1])).T, columns = ["stat_prob","nonstat_prob"])
+    df.to_csv("Model_Example/stat_test-probs.csv", index = False)
     for i in range(100):
         if prediction[i,0] >= 0.5:
             count += 1
@@ -312,7 +314,8 @@ def main():
     
     prediction = model.predict(nonstationary_x_test)
     count = 0
-
+    df = pd.DataFrame(np.vstack((prediction[:,0],prediction[:,1])).T, columns = ["stat_prob","nonstat_prob"])
+    df.to_csv("Model_Example/nonstat_test-probs.csv", index = False)
     for i in range(100):
         if prediction[i,1] >= 0.5:
             count += 1
