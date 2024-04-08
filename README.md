@@ -47,6 +47,6 @@ Results can be reproduced by running the following command:
 ```
 bash run.sh
 ```
-The accuracy on the test sets will be displayed in the command prompt.
+The accuracy on the test sets will be displayed in the command prompt for both the ConvNet and the tests of hypotheses.
 
 
