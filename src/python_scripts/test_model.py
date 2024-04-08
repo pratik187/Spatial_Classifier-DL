@@ -307,8 +307,7 @@ def main():
     print("")
     print("##################################################################")
     print("")
-    print("--------- Accuracy on Stationary data with spherical covariance ---------")
-    print('{}%'.format(count))
+    print("Accuracy on Stationary data with spherical covariance {}%".format(count))
     print("")
     print("##################################################################")
     
@@ -322,12 +321,13 @@ def main():
     print("")
     print("##################################################################")
     print("")
-    print("--------- Accuracy on non-Stationary data with spherical covariance ---------")
-    print('{}%'.format(count))
+    print("Accuracy on non-Stationary data with spherical covariance {}%".format(count))
     print("")
     print("##################################################################")
     
-    
+    cwd = os.getcwd()
+    print("[*][*][*] Stationarity test [*][*][*]")
+    subprocess.run("Rscript "+cwd+"/src/R_scripts/stationarity_test.R "+cwd,shell = True, executable="/bin/bash") 
     
     
 if __name__ == '__main__':
